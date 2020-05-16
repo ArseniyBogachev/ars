@@ -1,0 +1,53 @@
+y = list(range(1,10))
+def f1(y):
+    print('-------------')
+    for i in range(3):
+        print("|", y[0 + i*3], "|", y[1 + i*3], "|", y[2 + i*3], "|")
+        print('-------------')
+print(f1(y))
+
+
+def win1():
+    win_cod = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+    for i in win_cod:
+        if y[i[0]] == y[i[1]] == y[i[2]]:
+            print('Победа!')
+
+
+while True:
+    def player1():
+        value = True
+        s = int(input("Введите число от 1 до 9:"))
+        while value:
+            if s >= 1 and s <= 9:
+                if str(y[s - 1]) not in 'XO':
+                    y[s - 1] = 'X'
+                    value = False
+                else:
+                    print('Выберите другую позицию!')
+                    s = int(input('Введите число от 1 до 9:'))
+            else:
+                print('Неверное число!')
+                s = int(input('Введите число от 1 до 9:'))
+        return f1(y)
+    player1()
+    win1()
+
+
+    def player2():
+        value = True
+        s = int(input("Введите число от 1 до 9:"))
+        while value:
+            if s >= 1 and s <= 9:
+                if str(y[s-1]) not in 'XO':
+                    y[s - 1] = 'O'
+                    value = False
+                else:
+                    print('Выберите другую позицию!')
+                    s = int(input('Введите число от 1 до 9:'))
+            else:
+                print('Неверное число!')
+                s = int(input('Введите число от 1 до 9:'))
+        return f1(y)
+    player2()
+    win1()
