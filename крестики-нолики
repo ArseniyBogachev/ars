@@ -13,7 +13,7 @@ def win1():
         if y[i[0]] == y[i[1]] == y[i[2]]:
             print('Победа!')
 
-
+num_ = 0
 while True:
     def player1():
         value = True
@@ -32,6 +32,10 @@ while True:
         return f1(y)
     player1()
     win1()
+    num_ += 1
+    if num_ == 9:
+        print('Ничья.')
+        break
 
 
     def player2():
@@ -51,3 +55,4 @@ while True:
         return f1(y)
     player2()
     win1()
+    num_ += 1
