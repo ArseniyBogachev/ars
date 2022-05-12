@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 43em;
+  padding-top: 150px; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  -ms-grid-rows: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px; }
+  .grid__item {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5%; }
+
+.active {
+  background-color: #948a8a; }
+
+.cross {
+  background-image: url(../img/krest.png);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.circle {
+  background-image: url(../img/krug.png);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .button__reload {
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .button__menu {
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.button__reload:active {
+  -webkit-box-shadow: 0 0 5px 1px black inset;
+  box-shadow: 0 0 5px 1px black inset; }
+
+.menu {
+  position: fixed;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 68, 66, 0.6); }
+  .menu__content {
+    position: relative;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 700px;
+    height: 500px; }
+    .menu__content__list {
+      padding: 5%; }
+      .menu__content__list_player {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .menu__content__list_player li {
+          border: 2px solid black;
+          width: 200px;
+          height: 50px; }
+          .menu__content__list_player li span {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial; }
+      .menu__content__list_circle-or-cross {
+        margin-top: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .menu__content__list_circle-or-cross li {
+          border: 2px solid black;
+          width: 200px;
+          height: 50px; }
+          .menu__content__list_circle-or-cross li span {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial; }
+    .menu__content__start {
+      position: absolute;
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 50px; }
+      .menu__content__start span {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial; }
+
+.play {
+  color: white;
+  background-color: black; }

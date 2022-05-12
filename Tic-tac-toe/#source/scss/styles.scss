@@ -1,0 +1,144 @@
+@import 'nullstyle.scss';
+
+.content {
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 43em;
+    padding-top: 150px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+		&__item {
+            border: 2px solid black;
+            text-align: center;
+            padding: 5%;
+		}
+}
+
+.active{
+    background-color: rgb(148, 138, 138);
+}
+
+.cross{
+    background-image: url(../img/krest.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.circle{
+    background-image: url(../img/krug.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__reload {
+        border: 1px solid black;
+        height: 50px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__menu {
+        border: 1px solid black;
+        height: 50px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.button__reload:active{
+    box-shadow: 0 0 5px 1px black inset;
+}
+
+.menu {
+    position: fixed;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 68, 66, 0.6);
+    &__content {
+        position: relative;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 700px;
+        height: 500px;
+        &__list{
+            padding: 5%;
+            &_player{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 50px;
+                    span{
+                        display: block;
+                        margin-top: 10px;
+                        text-align: center;
+                        font-size: 25px;
+                        font-family: Arial;
+                    }
+                }
+            }
+            &_circle-or-cross{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 50px;
+                    span{
+                        display: block;
+                        margin-top: 10px;
+                        text-align: center;
+                        font-size: 25px;
+                        font-family: Arial;
+                    }
+                }
+            }       
+        }
+        &__start{
+            position: absolute;
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 50px;
+            span{
+                display: block;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 25px;
+                font-family: Arial;
+            }
+        }
+    }
+}
+
+.play{
+    color: white;
+    background-color: black;
+}
